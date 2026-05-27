@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins";
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+.weather-input {
+    width: 30%;
+    position: fixed;
+    inset: 0;
+    background-image: url(phone.jpg);
+    background-size: cover;
+    backdrop-filter: blur(12px);
+
+    padding: 1rem 2.5rem;
+
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.15);
+    /* darker glass */
+    backdrop-filter: blur(12px);
+    /* frosted effect */
+    -webkit-backdrop-filter: blur(12px);
+    color: aliceblue;
+}
+
+.input-search-area {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 2rem 0rem;
+}
+
+.input-search-area input {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(15px);
+    text-transform: capitalize;
+    padding: 0.3rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+}
+input::placeholder{
+    color: aliceblue;
+}
+
+.input-search-area .fa-search {
+    position: absolute;
+    right: 15px;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 18px;
+}
+.weather-icon{
+    padding-left: 230px;
+}
+.temprature{
+    padding-left: 210px;
+}
+.feels-like{
+    padding-left: 270px;
+}
+.description{
+    padding-left: 270px;
+}
+.weather-output {
+    width: 70%;
+    margin-left: 30%;
+    padding: 2rem;
+    background-image: url(bkg.jpg);
+    background-size: cover;
+    overflow-y: scroll;
+    position: fixed;
+    inset: 0;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-auto-flow: row;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.highlights div {
+    display: grid;
+    height: 180px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.15);
+    /* darker glass */
+    backdrop-filter: blur(12px);
+    /* frosted effect */
+    -webkit-backdrop-filter: blur(12px);
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 0.1rem;
+}
+
+.highlights i {
+    font-size: 45px;
+}
+
+.sun span {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.forecast {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows wrapping to next row */
+    gap: 1rem;
+    /* space between cards */
+    justify-content: flex-start;
+
+}
+
+.forecast-card {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.15);
+    /* darker glass */
+    backdrop-filter: blur(12px);
+    /* frosted effect */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    /* faint border */
+    border-radius: 16px;
+    padding: 1rem;
+    color: aliceblue;
+    width: 190px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="left-container">
+        <div class="weather-input">
+            <div class="input-search-area">
+                <input type="text" id="city-input" placeholder="search for cities">
+                <i class=" fa fa-search" onclick="getinfo()"></i>
+            </div>
+            <div class="weather-icon"></div>
+            <h1 class="temprature"></h1>
+            <div class="feels-like"></div>
+            <div class="description"></div>
+            <br><br><br><br><br><hr>
+            <div class="date"></div>
+            <div class="city"></div>
+        </div>
+        <div class="weather-output">
+            <!-- <h2 class="heading">Today's Highlight</h2> -->
+            <div class="highlights">
+                <div class="humidity">
+                    humidity
+                    <i class="fa-solid fa-water"></i>
+                    <h1 class="h-value"></h1>
+                </div>
+                <div class="wind">
+                    wind speed
+                    <i class="fa-solid fa-wind"></i>
+                    <h1 class="w-value"></h1>
+                </div>
+                <div class="sun">
+                   <span>
+                    <i class="fa-solid fa-sun"></i>
+                    <p><span class="sr-value"></span>Sunrise</p>
+                   </span>
+                   <span>
+                    <i class="fa-regular fa-sun"></i>
+                    <p><span class="ss-value"></span>Sunset</p>
+                   </span>
+                </div>
+                <div class="clouds">
+                   clouds
+                    <i class="fa-solid fa-cloud"></i>
+                    <h1 class="c-value"></h1>
+                </div>
+                <div class="uv-index">
+                    visiblity
+                    <i class="fa-solid fa-bacon"></i>
+                    <h1 class="uv-value"></h1>
+                </div>
+                <div class="pressure">
+                    pressure
+                    <i class="fa-solid fa-volcano"></i>
+                    <h1 class="p-value"></h1>
+                </div>
+            </div>
+            <br>
+            <br><br><br>
+            <!-- <h2 class="heading">This week</h2> -->
+            <div class="forecast">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
