@@ -17,8 +17,6 @@ const userLocation = document.getElementById("city-input"),
     search = document.querySelector(".fa-search");
 
 
-const API_KEY='';
-
 
 async function getinfo() {
     const cityInputee = userLocation.value.trim();
